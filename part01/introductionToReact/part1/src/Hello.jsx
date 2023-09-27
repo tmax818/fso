@@ -1,7 +1,8 @@
-const Hello = () => {
+const Hello = (props) => {
+  console.log(props)
     return (
       <div>
-        <p>Hello world</p>
+        <p>Hello {props.name}</p>
       </div>
     )
   }

@@ -22,10 +22,10 @@ const App = () => {
       alt="Katherine Johnson"
     />
 
-    < Hello />
-    < Hello />
-    < Hello />
-    < Hello />
+    < Hello name="George" />
+    < Hello name="Daisy" />
+    < Hello name="Reggie"/>
+    < Hello name="Spencer"/>
 
     </div>
   )
