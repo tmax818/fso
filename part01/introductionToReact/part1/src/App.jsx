@@ -11,6 +11,9 @@ const App = () => {
   const a = 10
   const b = 20
   console.log(now, a+b)
+
+  const name = 'Peter'
+  const age = 43
   return (
     <div>
       <p>Hello world, it is {now.toString()}</p>
@@ -22,10 +25,10 @@ const App = () => {
       alt="Katherine Johnson"
     />
 
-    < Hello name="George" />
-    < Hello name="Daisy" />
-    < Hello name="Reggie"/>
-    < Hello name="Spencer"/>
+    < Hello name="George" age={age} />
+    < Hello name={name} age={age} />
+    < Hello name="Reggie" age={age + 9}/>
+    < Hello name="Spencer" age={age - 13}/>
 
     </div>
   )

@@ -7,3 +7,4 @@
 
 # Part 1 fullstack
 1. [introduction to react](./part01/introductionToReact/README.md)
+2. [JavaScript](./part01/javaScript/README.md)
