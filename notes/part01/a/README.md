@@ -215,6 +215,7 @@ part2
 ```
 
 ### [1.1: course information, step 1](./exercises/1_1course_info/README.md)
+### [1.2: course information, step 1](./exercises/1_2course_info/README.md)
 
 [React]: https://react.dev
 [Vite]: https://vitejs.dev

@@ -4,9 +4,11 @@
         "courseinfo",
         "desass",
         "nums",
+        "phonebook",
         "sometext",
         "templating",
         "Thymeleaf",
+        "unicafe",
         "xhttp"
     ]
 }
