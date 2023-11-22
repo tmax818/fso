@@ -1,4 +1,4 @@
-# [introduction to React]()## [Part 1a: introduction to React](https://fullstackopen.com/en/part1/introduction_to_react)
+# [Part 1a: introduction to React](https://fullstackopen.com/en/part1/introduction_to_react)
 
 
 
@@ -7,7 +7,7 @@
 
 - npm version: 9.5.1
 
-```
+```bash
 # npm 6.x (outdated, but still used by some):
 npm create vite@latest part1 --template react
 
