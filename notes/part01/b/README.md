@@ -204,6 +204,8 @@ const result = average(2, 5)
 
 ### [1.3: course information step3](./exercises/1_3course_info/README.md)
 
+### [1.4: course information step4](./exercises/1_4course_info/README.md)
+
 
 
 -----------
@@ -238,7 +240,7 @@ const result = average(2, 5)
 [object literals]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#object_literals
 [function declaration]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function
 [function expression]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function
-
+[this]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
 
 
 

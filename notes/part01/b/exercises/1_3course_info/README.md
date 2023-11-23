@@ -1,6 +1,6 @@
 # 1.3: course information step3
 
-> Let's move forward to using objects in our application. Modify the variable definitions of the App component as follows and also refactor the application so that it still works:
+> Let's move forward to using objects in our application. Modify the variable definitions of the [App](./courseinfo/src/App.jsx) component as follows and also refactor the application so that it still works:
 
 ```jsx
 
@@ -28,6 +28,6 @@ const App = () => {
       ...
     </div>
   )
-  
+
 }
 ```
