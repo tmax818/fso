@@ -206,6 +206,8 @@ const result = average(2, 5)
 
 ### [1.4: course information step4](./exercises/1_4course_info/README.md)
 
+### [1.5: course information step5](./exercises/1_5course_info/README.md)
+
 
 
 -----------

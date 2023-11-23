@@ -30,7 +30,7 @@ const App = () => {
     <div>
       <Header course={course} />
       <Content part1={part1} part2={part2} part3={part3}/>
-      {/* <Total /> */}
+      <Total part1={part1} part2={part2} part3={part3}/>
     </div>
   )
 }
