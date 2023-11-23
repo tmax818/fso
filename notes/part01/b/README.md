@@ -98,13 +98,111 @@ console.log(rest)          // [3, 4, 5] is printed
 
 ## [objects](https://fullstackopen.com/en/part1/java_script#objects)
 
+- define objects with [object literals]
+
+```js
+const object1 = {
+  name: 'Arto Hellas',
+  age: 35,
+  education: 'PhD',
+}
+
+
+// The values of the properties can be of any type, like integers, strings, arrays, objects...
+
+// The properties of an object are referenced by using the "dot" notation, or by using brackets:
+
+console.log(object1.name)         // Arto Hellas is printed
+const fieldName = 'age' 
+console.log(object1[fieldName])    // 35 is printed
+
+// You can also add properties to an object on the fly by either using dot notation or brackets:
+
+object1.address = 'Helsinki'
+object1['secret number'] = 12341
+
+
+const object2 = {
+  name: 'Full Stack web application development',
+  level: 'intermediate studies',
+  size: 5,
+}
+
+const object3 = {
+  name: {
+    first: 'Dan',
+    last: 'Abramov',
+  },
+  grades: [2, 3, 5, 3],
+  department: 'Stanford University',
+}
+
+
+```
+
+
+>Objects can also be defined using so-called constructor functions, which results in a mechanism reminiscent of many other programming languages, e.g. Java's classes. Despite this similarity, JavaScript does not have classes in the same sense as object-oriented programming languages. There has been, however, an addition of the class syntax starting from version ES6, which in some cases helps structure object-oriented classes.
 
 
 ## [functions](https://fullstackopen.com/en/part1/java_script#functions)
 
+
+- defining arrow functions:
+
+```js
+const sum = (p1, p2) => {
+  console.log(p1)
+  console.log(p2)
+  return p1 + p2
+}
+
+// function call:
+
+const result = sum(1, 5)
+console.log(result)
+
+
+// function with single param can omit the ():
+
+const square = p => {
+  console.log(p)
+  return p * p
+}
+
+// funtions with a single expression in the body can omit {}
+
+const square = p => p * p
+
+```
+
+[function declaration] 
+
+```js
+function product(a, b) {
+  return a * b
+}
+
+const result = product(2, 6)
+// result is now 12
+```
+
+[function expression]
+
+```js
+const average = function(a, b) {
+  return (a + b) / 2
+}
+
+const result = average(2, 5)
+// result is now 3.5
+
+```
+
+>During this course, we will define all functions using the arrow syntax.
+
 ## [exercises 1.3-1.5)](https://fullstackopen.com/en/part1/java_script#exercises-1-3-1-5)
 
-
+### [1.3: course information step3](./exercises/1_3course_info/README.md)
 
 
 
@@ -137,7 +235,9 @@ console.log(rest)          // [3, 4, 5] is printed
 [`concat`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
 [`map`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 [destructuring assignment]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
-
+[object literals]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#object_literals
+[function declaration]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function
+[function expression]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function
 
 
 
