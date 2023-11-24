@@ -169,7 +169,7 @@ const square = p => {
   return p * p
 }
 
-// funtions with a single expression in the body can omit {}
+// functions with a single expression in the body can omit {}
 
 const square = p => p * p
 
@@ -200,7 +200,9 @@ const result = average(2, 5)
 
 >During this course, we will define all functions using the arrow syntax.
 
-## [exercises 1.3-1.5)](https://fullstackopen.com/en/part1/java_script#exercises-1-3-1-5)
+
+
+## [exercises 1.3-1.5](https://fullstackopen.com/en/part1/java_script#exercises-1-3-1-5)
 
 ### [1.3: course information step3](./exercises/1_3course_info/README.md)
 
@@ -208,7 +210,60 @@ const result = average(2, 5)
 
 ### [1.5: course information step5](./exercises/1_5course_info/README.md)
 
+## [object methods and `this`](https://fullstackopen.com/en/part1/java_script#object-methods-and-this)
 
+>Arrow functions and functions defined using the function keyword vary substantially when it comes to how they behave with respect to the keyword [`this`], which refers to the object itself.
+
+- we can assign methods to an object by defining properties that are functions:
+
+```js
+const arto = {
+  name: 'Arto Hellas',
+  age: 35,
+  education: 'PhD',
+
+  greet: function() {
+    console.log('hello, my name is ' + this.name)
+  },
+}
+
+arto.greet()  // "hello, my name is Arto Hellas" gets printed
+
+// methods can be assigned after object creation
+
+arto.growOlder = function() {
+  this.age += 1
+}
+
+
+console.log(arto.age)   // 35 is printed
+arto.growOlder()
+console.log(arto.age)   // 36 is printed
+
+```
+
+>When calling the method through a reference, the method loses knowledge of what the original [`this`] was. Contrary to other languages, in JavaScript the value of [`this`] is defined based on how the method is called. When calling the method through a reference, the value of [`this`] becomes the so-called global object and the end result is often not what the software developer had originally intended.
+
+```js
+arto.greet()       // "hello, my name is Arto Hellas" gets printed
+
+const referenceToGreet = arto.greet
+referenceToGreet() // prints "hello, my name is undefined"
+```
+
+>Losing track of this when writing JavaScript code brings forth a few potential issues. Situations often arise where React or Node (or more specifically the JavaScript engine of the web browser) needs to call some method in an object that the developer has defined. However, in this course, we avoid these issues by using "this-less" JavaScript.
+
+>If you want to gain a better understanding of how this works in JavaScript, the Internet is full of material about the topic, e.g. the screencast series [Understand JavaScript's this Keyword in Depth] by egghead.io is highly recommended!
+
+## [classes](https://fullstackopen.com/en/part1/java_script#classes)
+
+>As mentioned previously, there is no class mechanism in JavaScript like the ones in object-oriented programming languages. There are, however, features to make "simulating" object-oriented [classes] possible.
+
+>When it comes to syntax, the classes and the objects created from them are very reminiscent of Java classes and objects. Their behavior is also quite similar to Java objects. At the core, they are still objects based on JavaScript's [prototypal inheritance]. The type of both objects is actually Object, since JavaScript essentially only defines the [primitive] types Boolean, Null, Undefined, Number, String, Symbol, BigInt, and [Object]s.
+
+## [java-script-materials](https://fullstackopen.com/en/part1/java_script#java-script-materials)
+
+>It is highly recommended to immediately read [A re-introduction to JavaScript (JS tutorial)] on Mozilla's website.
 
 -----------
 
@@ -242,9 +297,14 @@ const result = average(2, 5)
 [object literals]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#object_literals
 [function declaration]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function
 [function expression]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function
-[this]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
-
-
+[`this`]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
+[Understand JavaScript's this Keyword in Depth]: https://egghead.io/courses/understand-javascript-s-this-keyword-in-depth
+[classes]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+[prototypal inheritance]: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance
+[data structure]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
+[Object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#objects
+[primative]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#primitive_values
+[A re-introduction to JavaScript (JS tutorial)]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_overview
 
 
 
