@@ -261,6 +261,8 @@ referenceToGreet() // prints "hello, my name is undefined"
 
 >When it comes to syntax, the classes and the objects created from them are very reminiscent of Java classes and objects. Their behavior is also quite similar to Java objects. At the core, they are still objects based on JavaScript's [prototypal inheritance]. The type of both objects is actually Object, since JavaScript essentially only defines the [primitive] types Boolean, Null, Undefined, Number, String, Symbol, BigInt, and [Object]s.
 
+>We're using [hooks]
+
 ## [java-script-materials](https://fullstackopen.com/en/part1/java_script#java-script-materials)
 
 >It is highly recommended to immediately read [A re-introduction to JavaScript (JS tutorial)] on Mozilla's website.
@@ -302,10 +304,12 @@ referenceToGreet() // prints "hello, my name is undefined"
 [classes]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
 [prototypal inheritance]: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance
 [data structure]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
+[hooks]: https://react.dev/reference/react
 [Object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#objects
 [primative]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#primitive_values
 [A re-introduction to JavaScript (JS tutorial)]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_overview
-
+[You don't know JS]: https://github.com/getify/You-Dont-Know-JS
+[javascript.info]: https://javascript.info/
 
 
 
