@@ -21,6 +21,9 @@
 ## [Part 1c: component, state, event handlers](https://fullstackopen.com/en/part1/component_state_event_handlers)
 - [notes](./notes/part01/c/README.md)
 
+## [Part 1d: a more complex state, debugging React apps](https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps)
+- [notes](./notes/part01/d/README.md)
+
 
 # [Part 2: communicating with server](https://fullstackopen.com/en/part2)
 
